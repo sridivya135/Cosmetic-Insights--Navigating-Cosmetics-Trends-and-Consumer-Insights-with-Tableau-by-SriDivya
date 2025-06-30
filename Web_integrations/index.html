@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cosmetics Analysis - Your Skincare Companion</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #fff0f5, #ffddee);
+            color: #4a0b2f;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #ec407a, #f48fb1);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #b4005b;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            animation: fadeInUp 1s ease both;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .placeholder {
+            padding: 20px;
+            background-color: #ffe6ee;
+            border-left: 4px solid #ec407a;
+            font-style: italic;
+            color: #a00044;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/story">Story</a>
+    </div>
+
+    <div class="container">
+        <div class="section" id="home">
+            <h1>Welcome to Your Skincare Companion</h1>
+            <p>Find the best products for your skin with our expert analysis recommendations.</p>
+            <h3>Discover Your Perfect Skincare</h3>
+            <ul>
+                <li><strong>Tailored for You:</strong> Explore top skincare brands and products that match your skin type and needs.</li>
+                <li><strong>Easy and Informative:</strong> Get clear, jargon-free advice for a simple and fun experience.</li>
+                <li><strong>Trusted Recommendations:</strong> We provide reliable, data-driven product guidance.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="dashboard-section">
+            <h2>Product Ranking and Detailed Analysis (Dashboard)</h2>
+            <p>Dive into the world of skincare and discover what works best for you.</p>
+            <img src="dashboard.png" alt="Dashboard Sample Image" />
+            <div class="placeholder">
+                [Tableau Dashboard Embed Code would go here.]
+            </div>
+            <p>This dashboard displays product rankings, brand performance, price comparisons, and more.</p>
+        </div>
+
+        <div class="section" id="story-section">
+            <h2>Understanding Product Suitability and Brand Performance (Story)</h2>
+            <img src="Story.png" alt="Skincare Story Insights" />
+            <div class="placeholder">
+                [Tableau Story Embed Code would go here.]
+            </div>
+            <p>This story reveals skincare insights for different skin types, brand performance, and label highlights.</p>
+        </div>
+
+        <div class="section" id="about-section">
+            <h2>About Cosmetics Analysis</h2>
+            <p>This platform helps you discover the best skincare products through expert analysis and user-friendly insights.</p>
+        </div>
+    </div>
+</body>
+</html>
